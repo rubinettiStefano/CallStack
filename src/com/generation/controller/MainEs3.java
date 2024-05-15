@@ -12,6 +12,14 @@ public class MainEs3
         ExceptionLogger.startLogging();
         En o = new En();
 
+        o.setA("a");
+        o.setB("b");
+        o.setC("c");
+        o.setD("d");
+        o.setE("e");
+        o.setF("f");
+        o.setG("g");
+        o.setH("h");
         checkA(o);
         checkB(o);
         checkC(o);
