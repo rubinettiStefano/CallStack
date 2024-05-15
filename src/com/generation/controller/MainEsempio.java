@@ -8,7 +8,7 @@ public class MainEsempio
 {
     public static void main(String[] args) 
     {
-        //ExceptionLogger.startLogging();
+        ExceptionLogger.startLogging();
         Scanner term = new Scanner(System.in);
         
         System.out.println("Inserisci un qualcosa");
