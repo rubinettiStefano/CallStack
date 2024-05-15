@@ -17,7 +17,7 @@ public class En
     }
 
     public String getA() {
-        return a.length()<99999 ? null : a ;
+        return a;
     }
 
     public String getB() {

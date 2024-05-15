@@ -20,6 +20,7 @@ public class MainEs3
         o.setF("f");
         o.setG("g");
         o.setH("h");
+        
         checkA(o);
         checkB(o);
         checkC(o);
