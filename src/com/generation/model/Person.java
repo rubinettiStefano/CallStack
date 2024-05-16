@@ -46,7 +46,7 @@ public class Person
 
     public void setName(String name) {
         if(name==null || name.isBlank() )
-            throw new RuntimeException("name brutto "+name+" , non lo voglio cambiare");
+            throw new InvalidPropertyException("Brutto brutto","name","Person");
         this.name = name;
     }
 
@@ -56,7 +56,7 @@ public class Person
 
     public void setSurname(String surname) {
         if( surname==null || surname.isBlank())
-            throw new RuntimeException("surname brutto "+surname+" , non lo voglio cambiare");
+            throw new InvalidPropertyException("Brutto brutto","surname","Person");
         this.surname = surname;
     }
 
