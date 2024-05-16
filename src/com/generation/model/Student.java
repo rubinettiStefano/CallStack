@@ -1,18 +1,15 @@
 package com.generation.model;
 
-import java.time.LocalDate;
-
-import com.generation.exceptions.InvalidPropertyException;
-
-public class Person 
+public class Student 
 {
     private Integer id;
     private String name,surname;
-    private LocalDate dob;//dateOfBirth
 
-    public Person(){}
+    private Double average;//media dei voti
+    
+    public Student(){}
 
-    public Person(Integer id, String name, String surname) 
+    public Student(Integer id, String name, String surname) 
     {
 
         if(id==null || id<=0 || name==null || name.isBlank() || surname==null || surname.isBlank() )
@@ -35,7 +32,7 @@ public class Person
 
     public void setId(Integer id) {
         if(id==null || id<=0 )
-            throw new InvalidPropertyException("Brutto brutto","id","Person");
+            throw new RuntimeException("Id brutto "+id+" , non lo voglio cambiare");
 
         this.id = id;
     }
@@ -60,13 +57,14 @@ public class Person
         this.surname = surname;
     }
 
-    public LocalDate getDob() {
-        return dob;
+    public Double getAverage() {
+        return average;
     }
 
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
+    public void setAverage(Double average) {
+        this.average = average;
     }
 
     
+
 }

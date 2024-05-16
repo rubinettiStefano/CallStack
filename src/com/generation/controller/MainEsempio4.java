@@ -10,7 +10,7 @@ public class MainEsempio4
     {
         ExceptionLogger.startLogging();
         Scanner term = new Scanner(System.in);
-        
+
         boolean correctExecution = false;
         do 
         {
@@ -18,20 +18,17 @@ public class MainEsempio4
             {
                 System.out.println("Inserisci un qualcosa");
                 String input = term.nextLine();
-
                 int risultato = metodino1(input);
-
-                
                 System.out.println(risultato);
-                correctExecution= true;
+                correctExecution = true;
             }
             catch(NumberFormatException e)
             {
                 System.out.println("Non mi hai messo un numero, riprova");
             }    
 
-        } while (!correctExecution);
-        
+        } while (correctExecution);
+
        
     }
 
